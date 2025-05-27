@@ -14,6 +14,8 @@ EXPOSE 8091
 
 # Fix 4: Correct script name ('catalina.sh', not 'catelina.sh')
 CMD ["catalina.sh", "run"]
+docker pull tomcat:9-jdkn-openjdk .
+then build
 #FROM  tomcat:9.0
 #	RUN  rm  -rf /usr/local/tomcat/webapps/*
 #	COPY /target/sample.war      /usr/local/tomcat/webapps/ROOT.war
